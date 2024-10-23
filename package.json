@@ -1,0 +1,17 @@
+{
+  "name": "mental",
+  "version": "1.0.0",
+  "description": "This website is built to provide a platform for both the patients and doctors to reach out each other and come out with solution for patient problems.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2"
+  }
+}
