@@ -5,7 +5,7 @@ const bodyParser=require("body-parser");
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-mongoose.connect("mongodb+srv://chinmayj360:%23CJ%402024@mindmentorcluster.o2i19.mongodb.net/mydatabase?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://darshangowdakr:admin@cluster0.tnuqbcf.mongodb.net/mental_db?retryWrites=true&w=majority&appName=Cluster0")
 
 //create data schema
 const RegisterSchema={
@@ -26,34 +26,7 @@ app.get("/",function(req,res){
     res.sendFile(__dirname+"/register.html");
 })
 
-// app.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, "index.html"));
-// });
 
-// // Serve users.html
-// app.get("/users", function(req, res) {
-//     res.sendFile(path.join(__dirname, "users.html"));
-// });
-
-// // Serve certified-psychologists.html
-// app.get("/certified-psychologists", function(req, res) {
-//     res.sendFile(path.join(__dirname, "certified-psychologists.html"));
-// });
-
-// // Serve admin.html
-// app.get("/admin", function(req, res) {
-//     res.sendFile(path.join(__dirname, "admin.html"));
-// });
-
-// // Serve register.html
-// app.get("/register", function(req, res) {
-//     res.sendFile(path.join(__dirname, "register.html"));
-// });
-
-// // Serve login.html
-// app.get("/login", function(req, res) {
-//     res.sendFile(path.join(__dirname, "login.html"));
-// });
 
 app.post("/register",function(req,res){
     let newData=new regData({
